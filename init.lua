@@ -2,4 +2,4 @@
 require('settings')
 require('keymaps')
 
--- Plugins
+-- Pluginsa
