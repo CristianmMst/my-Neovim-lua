@@ -1,13 +1,16 @@
 return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
-  use 'RRethy/nvim-base16'
+
+  -- Themes
+  use 'Mofiqul/dracula.nvim'
+  use "ellisonleao/gruvbox.nvim"
+
   use 'nvim-lualine/lualine.nvim'
   use 'kyazdani42/nvim-web-devicons'
   use 'phaazon/hop.nvim'
   use 'windwp/nvim-autopairs'
   use 'nvim-treesitter/nvim-treesitter'
   use 'p00f/nvim-ts-rainbow'
-  use {'rrethy/vim-hexokinase', run = 'make hexokinase' }
   use 'lilydjwg/colorizer'
   use 'KabbAmine/vCoolor.vim'
   use 'mattn/emmet-vim'
@@ -16,6 +19,7 @@ return require('packer').startup(function()
   use 'tpope/vim-commentary'
   use 'jose-elias-alvarez/null-ls.nvim'
   use 'MunifTanjim/prettier.nvim'
+  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
   use {'akinsho/bufferline.nvim', tag = "v2.*"}
 
   --AutoComplete

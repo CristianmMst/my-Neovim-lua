@@ -43,5 +43,10 @@ map("n", "<Leader>s", ":HopChar2<CR>", {noremap = true})
 map("n", "<Leader>7", ":Commentary<CR>", { noremap = true })
 map("v", "<Leader>7", ":Commentary<CR>", { noremap = true })
 
-
+-- Prettier
 map('n', '<leader>p', ':lua vim.lsp.buf.formatting()<CR>', default_opts)
+
+-- Telescope
+map('n', '<leader>ff', ':Telescope find_files<CR>', default_opts)
+map('n', '<leader>fb', ':Telescope buffers<CR>', default_opts)
+

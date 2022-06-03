@@ -15,11 +15,11 @@ opt.swapfile         = false
 -----------------------------------------------------------
 -- Netrw Disable
 -----------------------------------------------------------
-g.loaded_netrwSettings = 1
-g.loaded_netrwPlugin = 1
-g.loaded_netrw  = 1
-g.loaded_netrwFileHandlers = 1
-g.loaded_matchit = 1
+g.loaded_netrwSettings  	= 1
+g.loaded_netrwPlugin    	= 1
+g.loaded_netrw          	= 1
+g.loaded_netrwFileHandlers  = 1
+g.loaded_matchit        	= 1
 -----------------------------------------------------------
 -- Neovim UI
 -----------------------------------------------------------
@@ -56,7 +56,7 @@ opt.synmaxcol        = 1000      -- max column for syntax highlight
 -----------------------------------------------------------
 -- Tabs, indent
 -----------------------------------------------------------
-opt.expandtab        = true      -- use spaces instead of tabs
+-- opt.expandtab        = true      -- use spaces instead of tabs
 opt.shiftwidth       = 4         -- shift 4 spaces when tab
 opt.tabstop          = 4         -- 1 tab == 4 spaces
 opt.smartindent      = true      -- autoindent new lines
@@ -69,18 +69,3 @@ cmd [[autocmd FileType text,markdown,xml,html,xhtml,javascript setlocal cc=0]]
 g.indentLine_char = '|'          -- set indentLine character
 -- disable IndentLine for markdown files (avoid concealing)
 cmd [[autocmd FileType markdown let g:indentLine_enabled=0]]
-
------------------------------------------------------------
--- Terminal
------------------------------------------------------------
--- open a terminal pane on the right using :Term
-cmd [[command Term :botright vsplit term://$SHELL]]
-
--- Terminal visual tweaks
--- enter insert mode when switching to terminal
--- close terminal buffer on process exit
-cmd [[
-    autocmd TermOpen * setlocal listchars= nonumber norelativenumber nocursorline
-    autocmd TermOpen * startinsert
-    autocmd BufLeave term://* stopinsert
-]]

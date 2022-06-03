@@ -4,7 +4,7 @@ require('keymaps')
 require('packer-config')
 
 -- Plugins
-require('plugins/Base-16')
+require('plugins/Theme')
 require('plugins/lualine')
 require('plugins/buffer-line')
 require('plugins/neo-tree')
