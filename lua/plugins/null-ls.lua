@@ -5,7 +5,9 @@ local diagnostics = null_ls.builtins.diagnostics
 
 local sources = {
 	formatting.stylua,
-    formatting.prettierd
+	formatting.prettier.with({
+		extra_args = { "--single-quote", "--use-tabs" },
+	}),
 }
 
 null_ls.setup({

@@ -16,11 +16,13 @@ return require('packer').startup(function()
   use 'mattn/emmet-vim'
   use 'windwp/nvim-ts-autotag'
   use 'lukas-reineke/indent-blankline.nvim'
-  use 'tpope/vim-commentary'
   use 'jose-elias-alvarez/null-ls.nvim'
-  use 'MunifTanjim/prettier.nvim'
+
   use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
   use {'akinsho/bufferline.nvim', tag = "v2.*"}
+
+  -- Commentary
+  use 'tpope/vim-commentary'
 
   --AutoComplete
   use 'neovim/nvim-lspconfig'

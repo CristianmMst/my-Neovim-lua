@@ -13,21 +13,12 @@ opt.mouse            = 'a'
 opt.clipboard        = 'unnamedplus'
 opt.swapfile         = false
 -----------------------------------------------------------
--- Netrw Disable
------------------------------------------------------------
-g.loaded_netrwSettings  	= 1
-g.loaded_netrwPlugin    	= 1
-g.loaded_netrw          	= 1
-g.loaded_netrwFileHandlers  = 1
-g.loaded_matchit        	= 1
------------------------------------------------------------
 -- Neovim UI
 -----------------------------------------------------------
 opt.number           = true
 opt.relativenumber   = true
 opt.wrap             = false
 opt.cursorline       = true
-opt.background       = 'dark'
 opt.ruler            = true
 opt.autoindent       = true
 opt.title            = true
@@ -54,11 +45,36 @@ opt.history          = 100       -- remember n lines in history
 opt.lazyredraw       = true      -- faster scrolling
 opt.synmaxcol        = 1000      -- max column for syntax highlight
 -----------------------------------------------------------
+-- Disable
+-----------------------------------------------------------
+g.loaded_gzip               = 1
+g.loaded_zip                = 1
+g.loaded_zipPlugin          = 1
+g.loaded_tar                = 1
+g.loaded_tarPlugin          = 1
+
+g.loaded_getscript          = 1
+g.loaded_getscriptPlungin   = 1
+g.loaded_vimball            = 1
+g.loaded_vimballPlugin      = 1
+g.loaded_2html_plugin       = 1
+
+g.loaded_netrwSettings  	= 1
+g.loaded_netrwPlugin    	= 1
+g.loaded_netrw          	= 1
+g.loaded_netrwFileHandlers  = 1
+
+g.loaded_matchit        	= 1
+g.loaded_matchparen        	= 1
+g.loaded_logiPat            = 1
+g.loaded_rrhelper           = 1
+
+-----------------------------------------------------------
 -- Tabs, indent
 -----------------------------------------------------------
--- opt.expandtab        = true      -- use spaces instead of tabs
-opt.shiftwidth       = 4         -- shift 4 spaces when tab
-opt.tabstop          = 4         -- 1 tab == 4 spaces
+opt.expandtab        = true      -- use spaces instead of tabs
+opt.shiftwidth       = 2         -- shift 4 spaces when tab
+opt.tabstop          = 2         -- 1 tab == 4 spaces
 opt.smartindent      = true      -- autoindent new lines
 
 -- don't auto commenting new lines
