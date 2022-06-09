@@ -34,11 +34,11 @@ map("n", "<S-tab>", ":bp<CR>", default_opts)
 -- Applications & Plugins shortcuts:
 -----------------------------------------------------------
 
--- open/close
-map("n", "<leader>n", ":Neotree toggle<CR>", default_opts)
+-- open/close Tree
+map("n", "<leader>n", ":NvimTreeToggle<CR>", default_opts)
 
 -- EasyMotion
-map("n", "<Leader>s", "<Plug>(easymotion-s2)", { noremap = true})
+map("n", "<Leader>s", "<Plug>(easymotion-s2)", { noremap = true })
 
 -- Comentary
 map("", "<Leader>7", ":Commentary<CR>", {})

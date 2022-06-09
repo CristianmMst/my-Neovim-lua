@@ -3,7 +3,6 @@ return require('packer').startup(function()
 
   -- Themes
   use 'Mofiqul/dracula.nvim'
-  use "ellisonleao/gruvbox.nvim"
 
   use 'nvim-lualine/lualine.nvim'
   use 'kyazdani42/nvim-web-devicons'
@@ -17,6 +16,8 @@ return require('packer').startup(function()
   use 'windwp/nvim-ts-autotag'
   use 'lukas-reineke/indent-blankline.nvim'
   use 'jose-elias-alvarez/null-ls.nvim'
+  use 'nvim-lua/plenary.nvim'
+  use 'kyazdani42/nvim-tree.lua'
 
   use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
   use {'akinsho/bufferline.nvim', tag = "v2.*"}
@@ -41,12 +42,5 @@ return require('packer').startup(function()
         'saadparwaiz1/cmp_luasnip',
         'rafamadriz/friendly-snippets'
       }
-  }
-
-  use {'nvim-neo-tree/neo-tree.nvim', branch = "v2.x",
-        requires = { 
-          "nvim-lua/plenary.nvim",
-          "MunifTanjim/nui.nvim",
-    }
   }
 end)
