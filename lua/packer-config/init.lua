@@ -7,7 +7,7 @@ return require('packer').startup(function()
 
   use 'nvim-lualine/lualine.nvim'
   use 'kyazdani42/nvim-web-devicons'
-  use 'phaazon/hop.nvim'
+  use 'easymotion/vim-easymotion'
   use 'windwp/nvim-autopairs'
   use 'nvim-treesitter/nvim-treesitter'
   use 'p00f/nvim-ts-rainbow'
@@ -25,6 +25,8 @@ return require('packer').startup(function()
   use 'tpope/vim-commentary'
 
   --AutoComplete
+  -- use {'neoclide/coc.nvim', branch = 'release'}
+
   use 'neovim/nvim-lspconfig'
   use 'williamboman/nvim-lsp-installer'
   use 'onsails/lspkind.nvim'

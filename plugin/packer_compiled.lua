@@ -124,11 +124,6 @@ _G.packer_plugins = {
     path = "/home/cristian/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
-  ["hop.nvim"] = {
-    loaded = true,
-    path = "/home/cristian/.local/share/nvim/site/pack/packer/start/hop.nvim",
-    url = "https://github.com/phaazon/hop.nvim"
-  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/cristian/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
@@ -225,6 +220,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/cristian/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
+  },
+  ["vim-easymotion"] = {
+    loaded = true,
+    path = "/home/cristian/.local/share/nvim/site/pack/packer/start/vim-easymotion",
+    url = "https://github.com/easymotion/vim-easymotion"
   }
 }
 

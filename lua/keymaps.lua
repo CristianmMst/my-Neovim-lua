@@ -26,6 +26,7 @@ map("n", "<leader>w", ":w<CR>", default_opts)
 map("n", "<leader><ESC>", ":q<CR>", default_opts)
 map("n", "<leader>q", ":bd!<CR>", default_opts)
 
+-- Buffer Change
 map("n", "<tab>", ":bn<CR>", default_opts)
 map("n", "<S-tab>", ":bp<CR>", default_opts)
 
@@ -37,7 +38,7 @@ map("n", "<S-tab>", ":bp<CR>", default_opts)
 map("n", "<leader>n", ":Neotree toggle<CR>", default_opts)
 
 -- EasyMotion
-map("n", "<Leader>s", ":HopChar2<CR>", { noremap = true })
+map("n", "<Leader>s", "<Plug>(easymotion-s2)", { noremap = true})
 
 -- Comentary
 map("", "<Leader>7", ":Commentary<CR>", {})

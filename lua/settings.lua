@@ -41,6 +41,9 @@ opt.listchars        = 'tab:▸ ,space:·,nbsp:␣,trail:•,precedes:«,extends
 -- Memory, CPU
 -----------------------------------------------------------
 opt.hidden           = true      -- enable background buffers
+opt.backup           = false
+opt.writebackup      = false
+
 opt.history          = 100       -- remember n lines in history
 opt.lazyredraw       = true      -- faster scrolling
 opt.synmaxcol        = 1000      -- max column for syntax highlight
@@ -68,7 +71,6 @@ g.loaded_matchit        	= 1
 g.loaded_matchparen        	= 1
 g.loaded_logiPat            = 1
 g.loaded_rrhelper           = 1
-
 -----------------------------------------------------------
 -- Tabs, indent
 -----------------------------------------------------------
