@@ -4,43 +4,43 @@ return require('packer').startup(function()
   -- Themes
   use 'Mofiqul/dracula.nvim'
 
-  use 'nvim-lualine/lualine.nvim'
+  -- Requires | Complementos
+  use 'nvim-lua/plenary.nvim'
   use 'kyazdani42/nvim-web-devicons'
-  use 'easymotion/vim-easymotion'
-  use 'windwp/nvim-autopairs'
-  use 'nvim-treesitter/nvim-treesitter'
+
+  -- Typing
+  use 'mattn/emmet-vim'
+  use 'tpope/vim-surround'
   use 'p00f/nvim-ts-rainbow'
+  use 'tpope/vim-commentary'
+  use 'windwp/nvim-autopairs'
+  use 'windwp/nvim-ts-autotag'
+
+  -- IDE
   use 'lilydjwg/colorizer'
   use 'KabbAmine/vCoolor.vim'
-  use 'mattn/emmet-vim'
-  use 'windwp/nvim-ts-autotag'
-  use 'lukas-reineke/indent-blankline.nvim'
-  use 'jose-elias-alvarez/null-ls.nvim'
-  use 'nvim-lua/plenary.nvim'
-  use 'kyazdani42/nvim-tree.lua'
-
-  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
-  use {'akinsho/bufferline.nvim', tag = "v2.*"}
-
-  -- Commentary
-  use 'tpope/vim-commentary'
-
-  -- Postman
   use 'NTBBloodbath/rest.nvim'
+  use 'kyazdani42/nvim-tree.lua'
+  use 'nvim-lualine/lualine.nvim'
+  use 'easymotion/vim-easymotion'
+  use 'jose-elias-alvarez/null-ls.nvim'
+  use 'nvim-treesitter/nvim-treesitter'
+  use 'lukas-reineke/indent-blankline.nvim'
+  use {'akinsho/bufferline.nvim', tag = "v2.*"}
 
   --AutoComplete
   -- use {'neoclide/coc.nvim', branch = 'release'}
+  use 'onsails/lspkind.nvim'
   use 'neovim/nvim-lspconfig'
   use 'williamboman/nvim-lsp-installer'
-  use 'onsails/lspkind.nvim'
 
   -- Snipets
   use {'hrsh7th/nvim-cmp',
       requires = {
-        'hrsh7th/cmp-nvim-lsp',
-        'hrsh7th/cmp-buffer',
-        'hrsh7th/cmp-path',
         'L3MON4D3/LuaSnip',
+        'hrsh7th/cmp-path',
+        'hrsh7th/cmp-buffer',
+        'hrsh7th/cmp-nvim-lsp',
         'saadparwaiz1/cmp_luasnip',
         'rafamadriz/friendly-snippets'
       }
