@@ -43,5 +43,6 @@ map("n", "<Leader>s", "<Plug>(easymotion-s2)", { noremap = true })
 -- Comentary
 map("", "<Leader>7", ":Commentary<CR>", {})
 
--- Prettier
-map("n", "<leader>p", ":lua vim.lsp.buf.formatting()<CR>", default_opts)
+-- Rest
+map("n", "<Leader>rn", "<Plug>RestNvim", { noremap = true })
+

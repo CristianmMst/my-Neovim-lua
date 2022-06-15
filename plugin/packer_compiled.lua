@@ -201,6 +201,11 @@ _G.packer_plugins = {
     path = "/home/cristian/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["rest.nvim"] = {
+    loaded = true,
+    path = "/home/cristian/.local/share/nvim/site/pack/packer/start/rest.nvim",
+    url = "https://github.com/NTBBloodbath/rest.nvim"
+  },
   ["vCoolor.vim"] = {
     loaded = true,
     path = "/home/cristian/.local/share/nvim/site/pack/packer/start/vCoolor.vim",

@@ -25,9 +25,11 @@ return require('packer').startup(function()
   -- Commentary
   use 'tpope/vim-commentary'
 
+  -- Postman
+  use 'NTBBloodbath/rest.nvim'
+
   --AutoComplete
   -- use {'neoclide/coc.nvim', branch = 'release'}
-
   use 'neovim/nvim-lspconfig'
   use 'williamboman/nvim-lsp-installer'
   use 'onsails/lspkind.nvim'
