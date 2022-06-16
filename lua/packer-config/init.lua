@@ -4,6 +4,11 @@ return require('packer').startup(function()
   -- Themes
   use 'Mofiqul/dracula.nvim'
 
+  -- VScode
+  use 'kyazdani42/nvim-tree.lua'
+  use 'nvim-lualine/lualine.nvim'
+  use {'akinsho/bufferline.nvim', tag = "v2.*"}
+
   -- Requires | Complementos
   use 'nvim-lua/plenary.nvim'
   use 'kyazdani42/nvim-web-devicons'
@@ -20,13 +25,12 @@ return require('packer').startup(function()
   use 'lilydjwg/colorizer'
   use 'KabbAmine/vCoolor.vim'
   use 'NTBBloodbath/rest.nvim'
-  use 'kyazdani42/nvim-tree.lua'
-  use 'nvim-lualine/lualine.nvim'
+  use 'mg979/vim-visual-multi'
   use 'easymotion/vim-easymotion'
   use 'jose-elias-alvarez/null-ls.nvim'
   use 'nvim-treesitter/nvim-treesitter'
   use 'lukas-reineke/indent-blankline.nvim'
-  use {'akinsho/bufferline.nvim', tag = "v2.*"}
+  use 'segeljakt/vim-silicon'
 
   --AutoComplete
   -- use {'neoclide/coc.nvim', branch = 'release'}
