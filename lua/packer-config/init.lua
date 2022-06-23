@@ -24,7 +24,6 @@ return require('packer').startup(function()
   -- IDE
   use 'lilydjwg/colorizer'
   use 'KabbAmine/vCoolor.vim'
-  use 'NTBBloodbath/rest.nvim'
   use 'mg979/vim-visual-multi'
   use 'easymotion/vim-easymotion'
   use 'jose-elias-alvarez/null-ls.nvim'

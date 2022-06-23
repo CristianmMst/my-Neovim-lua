@@ -43,8 +43,5 @@ map("n", "<Leader>s", "<Plug>(easymotion-s2)", { noremap = true })
 -- Comentary
 map("", "<Leader>7", ":Commentary<CR>", {})
 
--- Rest
-map("n", "<Leader>rn", "<Plug>RestNvim", { noremap = true })
-
 -- Foto Silicon
 map("v", "<C-p>", ":Silicon ~/Imágenes/Silicon.png<CR>", { noremap = true })
