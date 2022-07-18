@@ -45,3 +45,4 @@ map("", "<Leader>7", ":Commentary<CR>", {})
 
 -- Foto Silicon
 map("v", "<C-p>", ":Silicon ~/Imágenes/Silicon.png<CR>", { noremap = true })
+

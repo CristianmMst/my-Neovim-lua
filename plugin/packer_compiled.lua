@@ -214,6 +214,11 @@ _G.packer_plugins = {
     path = "/home/cristian/.local/share/nvim/site/pack/packer/start/vim-easymotion",
     url = "https://github.com/easymotion/vim-easymotion"
   },
+  ["vim-silicon"] = {
+    loaded = true,
+    path = "/home/cristian/.local/share/nvim/site/pack/packer/start/vim-silicon",
+    url = "https://github.com/segeljakt/vim-silicon"
+  },
   ["vim-surround"] = {
     loaded = true,
     path = "/home/cristian/.local/share/nvim/site/pack/packer/start/vim-surround",

@@ -21,6 +21,13 @@ return require('packer').startup(function()
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
 
+  -- Rest
+  use { "NTBBloodbath/rest.nvim",
+    requires = { 
+      "nvim-lua/plenary.nvim"
+    }
+  }
+
   -- IDE
   use 'lilydjwg/colorizer'
   use 'KabbAmine/vCoolor.vim'
